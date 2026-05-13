@@ -8,7 +8,7 @@ st.set_page_config(page_title="VCPL HR Dashboard", layout="wide")
 # COMPANY TITLE
 st.markdown("""
 <h1 style='text-align: center; color: darkblue;'>
-Vishwanathan Constructions Pvt Ltd
+Viswanathan Constructions Pvt Ltd
 </h1>
 <hr>
 """, unsafe_allow_html=True)
