@@ -43,9 +43,17 @@ st.markdown("---")
 # CHARTS
 
 # Attendance Pie Chart
-fig1 = px.pie(
-    names=["Present", "Absent"],
-    values=[present, absent],
+attendance_data = pd.DataFrame({
+    "Status": ["Present", "Absent"],
+    "Count": [present, absent]
+})
+
+fig1 = px.bar(
+    attendance_data,
+    x="Status",
+    y="Count",
+    color="Status",
+    text="Count",
     title="Today's Attendance"
 )
 
